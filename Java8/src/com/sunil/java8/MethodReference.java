@@ -34,7 +34,7 @@ class MethodReferenceThread{
     }
 }
 
-class MyThread extends MethodReferenceThread{
+class   MyThread extends MethodReferenceThread{
     public static void main(String a[]){
 /*        Runnable r = ()->{
             for(int i=0;i<=10;i++){

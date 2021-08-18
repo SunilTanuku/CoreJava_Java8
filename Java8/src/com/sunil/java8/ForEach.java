@@ -13,7 +13,8 @@ public static void main(String a[]) {
     elements.add("2");
     elements.add("3");
     elements.add("4");
-    elements.forEach(e -> System.out.println(e));
+    //elements.forEach(e -> System.out.println(e));
+    elements.forEach(System.out::println);
 
     List<Integer> myList = Arrays.asList(2,334,545,234,6454,343);
   //  myList.stream().filter(e->e%2 == 0).collect(Collectors.toList());

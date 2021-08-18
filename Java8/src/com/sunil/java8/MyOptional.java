@@ -12,6 +12,7 @@ public class  MyOptional {
         //isPresent checks for any content inside.if it has any content returns true else false
         // in this case isPresent returns false
         if(checkNull.isPresent()){
+
             System.out.println("Checknull is not null");
         }else {
             System.out.println("CheckNull is null");

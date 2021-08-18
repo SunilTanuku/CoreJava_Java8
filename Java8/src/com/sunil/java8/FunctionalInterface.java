@@ -139,7 +139,7 @@ class Sunilxys implements left,right{
     }
 }
 
-class IndirecThreadImplementation{
+class IndirecThreadImplementation{    // anonymmus inner class
     public static void main(String[] args) {
 
         Thread t = new Thread(new Runnable() {
@@ -153,10 +153,33 @@ class IndirecThreadImplementation{
     }
 }
 
+class lamdaExp{       // lambda expression
+    public static void main(String[] args) {
+        new Thread(()->
+        {System.out.println("New thread created");}).start();
+     }
+    }
+
+class anonymusClass{  // anonymmus class
+    public static void main(String[] args) {    
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+
+            }
+
+    });
+
+
+    }
+}
+
+
+
 
 class ThreadTest {
 
-    public static void main(String[] args) {
+     public static void main(String[] args) {   // lambda expression
         Runnable r = () -> {
             for (int i = 0; i < 10; i++) {
                 if (i % 2 == 0)
@@ -164,7 +187,7 @@ class ThreadTest {
             }
         };
         Thread t = new Thread(r);
-        t.start();
+         t.start();
         for (int i = 0; i < 10; i++) {
             if (i % 2 != 0)
                 System.out.println("Odd threads" + i);

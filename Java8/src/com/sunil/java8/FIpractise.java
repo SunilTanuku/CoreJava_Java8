@@ -40,6 +40,16 @@ interface MyINterface3 {
     }
 }
 
+interface SunilTestINterface{
+    void Sample();
+}
+    class SunilTestINterfceClass{
+        public static void main(String[] args) {
+            SunilTestINterface c = ()-> System.out.println("Helllo");
+        }
+    }
+
+
 class EmployeeTest {
 
 
@@ -50,6 +60,7 @@ class EmployeeTest {
         this.eno = eno;
         this.name = name;
     }
+
 
     public String toString() {
         return eno + " : " + name;
@@ -77,7 +88,7 @@ class EmployeeTest {
         emp.stream().map(e->e.EmployeeName).collect(Collectors.toList());
         System.out.println("After srorting " + emp);
 
-    }
+     }
 }
 
 class   FIThread {

@@ -28,7 +28,7 @@ public class PredicateStreamFunction {
         List<Integer> finalList = list.stream().filter(e -> e > 5).collect(Collectors.toList());
         System.out.println("Just Stream " + finalList);
 
-        List<Integer> list2 = Arrays.asList(3,2,4,1,55,65,1,7);
+        List<Integer> list2 = Arrays.asList( 3,2,4,1,55,65,1,7);
         List<Integer> myList = list2.stream().sorted((i1,i2)->i1>i2?1:i1<i2?-1:0).collect(Collectors.toList());
         List<Integer> myList2 = list2.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
         List<Integer> myList3 = list2.stream().sorted((i1,i2)->i1.compareTo(i2)).collect(Collectors.toList());
